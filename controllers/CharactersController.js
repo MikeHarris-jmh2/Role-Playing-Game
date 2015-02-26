@@ -1,4 +1,11 @@
-rPG.controller('CharactersCtrl', function CharactersCtrl($scope, CharactersFactory) {
-  $scope.characters = CharactersFactory.characters;
-  $scope.CharactersFactory = CharactersFactory;
+rPG.controller('CharactersCtrl', function CharactersCtrl($scope, CharacterFactory) {
+  $scope.factory = CharacterFactory.factory;
+  $scope.CharacterFactory = CharacterFactory;
+  $scope.addCharacter = function() {
+    $scope.push({name: characterName, desc: [] })
+  }
+
+  $scope.addCompass = function() {
+    $scope.push({compass: true});
+  }
 });

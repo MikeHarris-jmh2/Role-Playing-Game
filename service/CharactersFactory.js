@@ -1,11 +1,5 @@
-rPG.factory('CharactersFactory', function CharactersFactory(){
+rPG.factory('CharacterFactory', function CharacterFactory(){
   var factory = {};
-  factory.characters = [];
-  factory.addCharacter = function() {
-    factory.characters.push({name: factory.characterName, id: factory.characters.length + 1, desc: []});
-
-    factory.characterName = null;
-  };
-
+  factory.health = { hp: 10 }
   return factory
-})
+});

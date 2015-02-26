@@ -3,6 +3,10 @@ h1 {
   font-size: 64px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 h3 {
   color:white;
   font-size: 54px;

@@ -28,3 +28,6 @@
     <button type="submit" class="btn btn-default" ng-click="submitted = true" ng-hide="submitted">Submit</button>
   </form>
 </div>
+<div ng-show="submitted">
+<a ui-sref="worlds1">Begin {{ character.name }}'s journey?!</a>
+</div>
