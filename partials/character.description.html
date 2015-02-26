@@ -1,20 +1,18 @@
-<div ng-show="character.desc.length">
+<div ng-show="submitted">
   <h2>Description for {{ character.name }} </h2>
   <ul>
-    <li ng-repeat="item in character.desc">
-      Gender: {{ item.gender }}
+      Gender: {{ character.gender }}
       <br>
-      Race: {{ item.race }}
-    </li>
+      Race: {{ character.race }}
   </ul>
 </div>
 
 <div ng-hide="submitted">
   <h2>Describe your character {{ character.name }}</h2>
-  <form ng-submit="addDescription()" class="form-inline" role="form">
+  <form ng-submit="addDescription()" class="row" role="form">
     <div class="form-group">
-      <input type="text" ng-model="characterGender" class="form-control" placeholder="What gender does your character identify with">
-      <select ng-model="characterRace" class="form-control" placeholder="Choose a race">
+      <input type="text" ng-model="gender" class="form-control" placeholder="Which gender does your character identify with">
+      <select ng-model="race" class="form-control" placeholder="Choose a race">
         <option value="">What ethnic group does your character identify most with?</option>
         <option value="Human">Human</option>
         <option value="Giant">Giant</option>

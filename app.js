@@ -21,7 +21,7 @@ rPG.config(function($stateProvider) {
   $stateProvider.state('worlds1', {
     url: "/worlds1",
     templateUrl: "partials/worlds1.html",
-    // controller: 'WorldsCtrl'
+    controller: 'CharactersCtrl'
   });
 
   $stateProvider.state('worlds2', {
