@@ -1,0 +1,17 @@
+h1 {
+  color: white;
+  font-size: 64px;
+}
+
+h3 {
+  color:white;
+  font-size: 54px;
+}
+
+body {
+  background-image: url('forest_img.jpg')
+}
+
+.jumbotron {
+  background: rgba(255, 255, 255, .8);
+}

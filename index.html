@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rPG">
+  <head>
+    <meta charset="UTF-8">
+    <title>Role-Playing Game</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/DescriptionController.js"></script>
+    <script src="controllers/CharactersController.js"></script>
+    <script src="service/CharactersFactory.js"></script>
+    <script src="service/DescriptionFactory.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div ui-view></div>
+      </div>
+    </div>
+  </body>
+</html>
