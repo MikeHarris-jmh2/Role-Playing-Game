@@ -9,9 +9,29 @@ rPG.controller('CharactersCtrl', function CharactersCtrl($scope, CharacterFactor
     $scope.character.compass = true;
   }
 
-  $scope.addKey = function() {
-    $scope.character.key = true;
+  $scope.isDead = function() {
+    if ($scope.character.hp = 0);
+      $scope.character.hp = "you're dead";
   }
+
+  $scope.addKey = function() {
+    var string = $scope.key;
+    var lowString = string.toLowerCase()
+
+    if (lowString === "glass") {
+      $scope.character.key = true;
+    }
+  };
+
+  $scope.addQuestion = function() {
+    var string = $scope.question;
+    var lowString = string.toLowerCase()
+
+     if (lowString === "nothing") {
+       $scope.character.question = true;
+     }
+  };
+
 
   $scope.addCandle = function() {
     var string = $scope.candle;
@@ -19,7 +39,7 @@ rPG.controller('CharactersCtrl', function CharactersCtrl($scope, CharacterFactor
       if (lowerString === "light candle") {
         $scope.character.candle = true;
       } else if (lowerString !== "light candle") {
-        return "You died"
+        $scope.character.hp -= 10;
       }
     };
 });

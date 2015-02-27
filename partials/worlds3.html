@@ -1,5 +1,14 @@
-<h1>This is World 3</h1>
-
-<div ng-hide="direction">
-<a ui-sref="worlds1">West</a>
+<link rel="stylesheet" href="css/world3.css">
+<div ng-hide="character.question">
+<h1>
+  <p>There is a frog sitting in the corner. He is staring at you oddly.</p>
+  <p>The frog then asks you "Poor people have it. Rich people need it. If you eat it you die. What is it?"</p>
+</h1>
+<form ng-submit="addQuestion()" role="form">
+<input type="text" ng-model="question" class="form-control" placeholder="How do you reply to the frog?">
+</form>
+</div>
+<div ng-show="character.question">
+<h1> The frog transforms into a wizard and disappears in a puff of smoke</h1>
+<button><a ui-sref="worlds1">West</a></button>
 </div>

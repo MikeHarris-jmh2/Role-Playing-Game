@@ -1,7 +1,14 @@
-<h1>This is World 4</h1>
+<link rel="stylesheet" href="css/world4.css">
+<h1>You're in an elaborate hallway.</h1>
+<h2>There is a large door ahead of you, bound in iron.</h2>
+<h2>It has a large keyhole, which you can see through</h2>
+<h2>Through the keyhole, you can see a DRAGON!</h2>
+</div>
 
 
 <div ng-hide="direction">
+<div ng-show="character.key">
+<h2>You use the key the wizard gave you to unlock the door</h2>
 <a ui-sref="worlds5">South</a>
-<a ui-sref="worlds1">North</a>
 </div>
+<a ui-sref="worlds1">North</a>

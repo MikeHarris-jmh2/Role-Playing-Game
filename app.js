@@ -27,18 +27,18 @@ rPG.config(function($stateProvider) {
   $stateProvider.state('worlds2', {
     url: "/worlds2",
     templateUrl: "partials/worlds2.html",
-    // controller: 'WorldsCtrl'
+     controller: 'CharactersCtrl'
   });
 
   $stateProvider.state('worlds3', {
     url: "/worlds3",
     templateUrl: "partials/worlds3.html",
-    // controller: 'WorldsCtrl'
+    controller: 'CharactersCtrl'
   });
   $stateProvider.state('worlds4', {
     url: "/worlds4",
     templateUrl: "partials/worlds4.html",
-    // controller: 'WorldsCtrl'
+    controller: 'CharactersCtrl'
   });
   $stateProvider.state('worlds5', {
     url: "/worlds5",
