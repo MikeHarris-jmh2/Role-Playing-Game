@@ -3,7 +3,7 @@
 
 <form ng-submit="addKey()" role="form" ng-show="character.question">
   <h1>A wizard appears in a puff of confusion!</h1>
-  <h1>The wizard asked you "If a blue house is made out of blue bricks, a yellow house is made out of yellow bricks and a pink house is made out of pink bricks, what is a green house made of?""</h1>
+  <p>The wizard asked you "If a blue house is made out of blue bricks, a yellow house is made out of yellow bricks and a pink house is made out of pink bricks, what is a green house made of?""</p>
 <input type="text" ng-model="key" class="form-control" placeholder="How do you reply to the wizard?">
 </form>
 </div>
@@ -11,6 +11,6 @@
 <a ui-sref="worlds1">South</a>
 </div>
 <div ng-show="character.key">
-<h1>The wizard disappears again, leaving a key in his wake.</h2>
+<p>The wizard disappears again, leaving a key in his wake.</p>
 <a ui-sref="worlds1">South</a>
 </div>
