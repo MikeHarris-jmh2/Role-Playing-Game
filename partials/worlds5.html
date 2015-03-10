@@ -1,7 +1,17 @@
 <link rel="stylesheet" href="css/world5.css">
 <h1>The dragon's lair</h1>
+<h4>Once the door is open you see the wizard from earlier</h4>
+<p>He says "Thank you for freeing me from my morphed prison, Now feel the wrath of my true power!"</p>
+<h5>Suddenly the wizard transforms into a terrifying Dragon!</h5>
+
+<form ng-submit="addBattle()" role="form">
+<h5>Looking around the room you notice a spear in the far corner of the room, you dash for the spear. Dodging fireballs left and right, once the spear is in your grasp you:</h5>
+<input type="text" ng-model="battle" class="form-control" placeholder="What do you do?">
+</form>
 
 <div ng-hide="direction">
-<a ui-sref="worlds6">South</a>
-<a ui-sref="worlds4">North</a>
+  <div ng-show="character.battle">
+    <a ui-sref="worlds6">South</a>
+    <a ui-sref="worlds4">North</a>
+  </div>
 </div>

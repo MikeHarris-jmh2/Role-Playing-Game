@@ -1,4 +1,11 @@
-<h1>This is World 6</h1>
-<h2>There is a dragon here</h2>
+<h1>The dragon has turned back into the wizard!</h1>
+<h2>To banish him into his frog prison again you must remember what the answer was to the first room</h2>
+<input type="text" ng-model="checkWin" class="form-control" placeholder="Remember?">
 
-<a ui-sref="worlds5">North</a>
+<div ng-show="character.win">
+  <h1>You won!</h1>
+</div>
+
+<div ng-show="character.lose"
+  <h1>Wizard killed you</h1>
+</div>

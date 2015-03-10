@@ -43,12 +43,12 @@ rPG.config(function($stateProvider) {
   $stateProvider.state('worlds5', {
     url: "/worlds5",
     templateUrl: "partials/worlds5.html",
-    // controller: 'WorldsCtrl'
+    controller: 'CharactersCtrl'
   });
   $stateProvider.state('worlds6', {
     url: "/worlds6",
     templateUrl: "partials/worlds6.html",
-    // controller: 'WorldsCtrl'
+    controller: 'CharactersCtrl'
   });
   $stateProvider.state('worlds7', {
     url: "/worlds7",

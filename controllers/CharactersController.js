@@ -11,7 +11,7 @@ rPG.controller('CharactersCtrl', function CharactersCtrl($scope, CharacterFactor
 
   $scope.isDead = function() {
     if ($scope.character.hp = 0);
-      $scope.character.hp = "you're dead";
+      dead: true;
   }
 
   $scope.addKey = function() {
@@ -42,4 +42,23 @@ rPG.controller('CharactersCtrl', function CharactersCtrl($scope, CharacterFactor
         $scope.character.hp -= 10;
       }
     };
+
+  $scope.addBattle = function() {
+    var string = $scope.battle;
+    var lowString = string.toLowerCase();
+
+    if(lowString = "throw spear"){
+      $scope.character.battle = true;
+    }
+  };
+
+  $scope.checkWin = function() {
+    var string = $scope.battle;
+    var lowString = string.toLowerCase();
+    if(lowString = "nothing") {
+      $scope.character.win = true;
+    } else {
+      $scope.character.lose = true;
+    }
+  };
 });
